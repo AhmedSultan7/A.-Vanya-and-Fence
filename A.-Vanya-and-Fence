@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main() {
+ 
+	int friendsnum,fenceHeight;
+	cin >> friendsnum>>fenceHeight;
+	int minimum_width_of_the_road=0;
+	while (friendsnum--) 
+	{
+		int x;
+		cin >> x;
+		if (x <= fenceHeight)
+ 
+			minimum_width_of_the_road++;
+		else
+			minimum_width_of_the_road+=2;		
+	}
+ 
+	cout << minimum_width_of_the_road;
+ 
+ 
+ 
+ 
+ 
+ 
+	return 0;
+}
